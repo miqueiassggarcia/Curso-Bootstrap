@@ -1,0 +1,84 @@
+<!-- Testando Bootstrap, linkando o css e os javascripts, formatando a tabela por o próprio-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segundo site com Bootstrap</title>
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <style>
+        p{
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- container-fluid serve para manter o site ajustavel a depender do tamanho da tela -->
+    <div class="container-fluid" style="background-color: aqua;">
+    <p>Olá Mundo</p>
+        <table class="table table-hover table-striped">
+            <tr>
+                <th>#</th>
+                <th>Cursos</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Bootstrap</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>HTML</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- row que cria um div com base em colunas, sendo que o maximo que cabe em uma linha é 12 e por madrão elas se ajustam automaticamente -->
+    <div class="container-fluid" style="background: tomato; padding: 100px 10px;">
+        <div class="row" style="margin-bottom: 30px;">
+            <div class="col-4" style="background-color: red;">
+                <p>topo 1</p>
+            </div>
+            <div class="col-4" style="background-color: green;">
+                <p>topo 2</p>
+            </div>
+            <div class="col-4" style="background-color: blue;">
+                <p>topo 3</p>
+            </div>
+        </div>
+
+        <!-- para definir o tamanho das colunas com base no tamanho da tela, utiliza-se alguns prefixos no nome da classe
+        são esses:   |Extra small <576px | Small ≥576px | Medium ≥768px | Large ≥992px | Extra large ≥1200px
+Max container width  | None (auto)       | 540px        | 720px         | 960px        | 1140px
+    Class prefix     | .col-             | .col-sm-     | .col-md-      | .col-lg-     | .col-xl- -->
+    
+        <div class="row">
+            <div class="col-xl-2 col-sm-12" style="background-color: teal;">
+                <p>Olá mundo</p>
+            </div>
+            <div class="col-xl-8 col-sm-12" style="background-color: springgreen;">
+                <p>Teste</p>
+            </div>
+            <div class="col-xl-2 col-sm-12" style="background-color: seagreen;">
+                <p>Hello World</p>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+            <div class="col-xl-6 col-sm-12" style="background-color: black;">
+                <p>Rodapé</p>
+            </div>
+            <div class="col-xl-6 col-sm-12" style="background-color: yellow;">
+                <p>Rodapé 2</p>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <footer>
+        <script src="public/js/jquery.js"></script>
+        <script src="public/js/bootstrap.bundle.min.js"></script>
+    </footer>
+</body>
+</html>
